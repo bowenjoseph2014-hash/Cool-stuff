@@ -1,5 +1,7 @@
 # 🎮 Cool Stuff Hub
 
+**🌐 [Visit the Website](https://bowenjoseph2014-hash.github.io/Cool-stuff/)**
+
 A fun, interactive website featuring random games and utilities!
 
 ## Features
@@ -45,6 +47,11 @@ Flip a coin for heads or tails with an animated effect.
 - HTML5
 - CSS3 (with animations and gradients)
 - Vanilla JavaScript (no frameworks)
+
+**Language Composition:**
+- JavaScript: 40.2%
+- CSS: 33.4%
+- HTML: 26.4%
 
 ## Browser Compatibility
 
