@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Stuff - Random Games & Fun</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 Cool Stuff Hub</h1>
+            <p>Random games and fun things to do!</p>
+        </header>
+
+        <nav class="nav-tabs">
+            <button class="tab-button active" data-tab="home">Home</button>
+            <button class="tab-button" data-tab="game">Memory Game</button>
+            <button class="tab-button" data-tab="random">Random Facts</button>
+            <button class="tab-button" data-tab="tools">Fun Tools</button>
+        </nav>
+
+        <!-- Home Tab -->
+        <section id="home" class="tab-content active">
+            <div class="welcome-section">
+                <h2>Welcome to Cool Stuff!</h2>
+                <p>Explore random games, facts, and fun tools. Navigate using the tabs above.</p>
+                <div class="features">
+                    <div class="feature-card">
+                        <h3>🎯 Memory Game</h3>
+                        <p>Test your memory with a classic flip card game</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>💡 Random Facts</h3>
+                        <p>Learn interesting facts about the world</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🛠️ Fun Tools</h3>
+                        <p>Try out random utilities and converters</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Memory Game Tab -->
+        <section id="game" class="tab-content">
+            <div class="game-section">
+                <h2>Memory Game</h2>
+                <div class="game-stats">
+                    <p>Moves: <span id="moves">0</span></p>
+                    <p>Matches: <span id="matches">0</span>/8</p>
+                    <button id="reset-game" class="btn">Reset Game</button>
+                </div>
+                <div class="game-board" id="game-board"></div>
+                <p id="game-message" class="game-message"></p>
+            </div>
+        </section>
+
+        <!-- Random Facts Tab -->
+        <section id="random" class="tab-content">
+            <div class="facts-section">
+                <h2>Random Facts</h2>
+                <div id="fact-display" class="fact-box">
+                    <p>Click the button to get a random fact!</p>
+                </div>
+                <button id="new-fact-btn" class="btn">Get Random Fact</button>
+            </div>
+        </section>
+
+        <!-- Fun Tools Tab -->
+        <section id="tools" class="tab-content">
+            <div class="tools-section">
+                <h2>Fun Tools</h2>
+                
+                <div class="tool-card">
+                    <h3>🎲 Dice Roller</h3>
+                    <div class="tool-content">
+                        <label>Dice type:
+                            <select id="dice-type">
+                                <option>d6</option>
+                                <option>d20</option>
+                                <option>d100</option>
+                            </select>
+                        </label>
+                        <button id="roll-btn" class="btn">Roll</button>
+                        <p id="dice-result"></p>
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <h3>🎨 Random Color Generator</h3>
+                    <div class="tool-content">
+                        <div id="color-box" class="color-box"></div>
+                        <p id="color-code"></p>
+                        <button id="gen-color-btn" class="btn">Generate Color</button>
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <h3>🃏 Coin Flip</h3>
+                    <div class="tool-content">
+                        <button id="flip-btn" class="btn btn-large">Flip Coin</button>
+                        <p id="flip-result" style="font-size: 48px; margin: 20px 0;">🪙</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Made with ❤️ | Random Cool Stuff 2024</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
